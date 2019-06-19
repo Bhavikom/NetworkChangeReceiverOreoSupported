@@ -29,7 +29,8 @@ public class NetworkChangeReceiver extends BroadcastReceiver
                 //adding to database
                 new Thread(new Runnable() {
                     @Override
-                    public void run() {
+                    public void
+                    run() {
                         DatabaseClient.getInstance(context.getApplicationContext()).getAppDatabase()
                                 .locationDao()
                                 .insert(locationPoint);
